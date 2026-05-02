@@ -1,0 +1,127 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Navigation */
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #003366;
+    margin: 0 10px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #00A651;
+    color: white;
+}
+
+/* Formulaire */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Fieldset */
+fieldset {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid #003366;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Legend */
+legend {
+    color: #003366;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    color: #003366;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+/* Focus effet */
+input:focus {
+    border-color: #00A651;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,166,81,0.3);
+}
+
+/* Bouton */
+button {
+    display: block;
+    margin: 20px auto;
+    background-color: #00A651;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+footer strong {
+    color: #00A651;
+}
+
+footer p {
+    margin: 5px 0;
+}
