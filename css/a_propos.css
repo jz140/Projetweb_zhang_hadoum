@@ -9,25 +9,27 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f6f9;
-    color: #333;
+    color: #444;
     padding: 20px;
+    line-height: 1.7;
 }
 
 /* Header */
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 header img {
     max-width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 /* Navigation */
 nav {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 nav a {
@@ -35,59 +37,64 @@ nav a {
     color: #003366;
     margin: 0 10px;
     font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 6px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
     transition: 0.3s;
 }
 
 nav a:hover {
     background-color: #00A651;
     color: white;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 /* Contenu principal */
 main {
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
 /* Sections */
 section {
     background-color: white;
-    padding: 25px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.04);
 }
 
 /* Titres */
 h1 {
     text-align: center;
     color: #003366;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 h2 {
-    color: #00A651;
-    margin-bottom: 10px;
-    border-left: 5px solid #00A651;
-    padding-left: 10px;
+    color: #003366;
+    margin-bottom: 15px;
+    border-left: 6px solid #00A651;
+    padding: 10px 15px;
+    background-color: #f4f6f9;
+    border-radius: 0 8px 8px 0;
 }
 
 /* Texte */
 p {
-    margin-bottom: 10px;
-    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
 /* Footer */
 footer {
-    margin-top: 40px;
+    margin-top: 50px;
     background-color: #003366;
     color: white;
-    padding: 20px;
-    border-radius: 12px;
+    padding: 30px 20px;
+    border-radius: 16px;
     text-align: center;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.05);
 }
 
 footer strong {
@@ -95,5 +102,5 @@ footer strong {
 }
 
 footer p {
-    margin: 5px 0;
+    margin: 8px 0;
 }
