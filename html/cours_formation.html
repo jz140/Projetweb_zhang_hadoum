@@ -1,159 +1,155 @@
 <!DOCTYPE html>
-
 <html lang="fr">
 
 <head>
-    <link href="../css/style_formation.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title> Site efrei projet - Cours et Formations</title>
-
     <meta charset="UTF-8">
-    <style>
-        table,
-        td,
-        caption {
-            border: 1px solid #333;
-        }
-
-        caption {
-            color: red;
-            font-size: large;
-        }
-
-        thead,
-        tfoot {
-            background-color: #333;
-            color: #fff;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations - Département Informatique Efrei</title>
+    <link rel="stylesheet" href="../css/style_formation.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="../html/accueil.html"> Accueil </a>
-            <a href="../html/cours_formation.html"> Cours et Formations </a>
-            <a href="../html/equipe_enseignante.html">Equipe Enseignante</a>
-            <a href="../html/projet_lab.html">Projet et Laboratoire</a>
-            <a href="../html/contact.html">Nous Contacter</a>
-            <a href="../html/a_propos.html">information</a>
+    <header class="site-header">
+        <a class="brand" href="accueil.html" aria-label="Retour à l'accueil">
+            <span class="brand-mark">EF</span>
+            <span><strong>Efrei</strong><small>Département Informatique</small></span>
+        </a>
+        <button class="menu-button" id="menuButton" type="button">Menu</button>
+        <nav class="main-nav" id="mainNav">
+            <a href="accueil.html">Accueil</a>
+            <a href="cours_formation.html">Formations</a>
+            <a href="equipe_enseignante.html">Enseignants</a>
+            <a href="projet_lab.html">Projets & Labs</a>
+            <a href="contact.html">Contact</a>
+            <a href="a_propos.html">À propos</a>
         </nav>
     </header>
-    <section>
-        <h1>Informatique</h1>
-        <p id="citation"></p>
-        Formation ingénieur <p></p>
-        <ol id="filiere">
-            <li class="filiere_item">
-                Information Technology :
-                <ul>
-                    <li>La filière Information Technology forme des ingénieurs capables de concevoir, déployer et
-                        gouverner des solutions numériques complexes au service des organisations. Elle propose quatre
-                        majeures de spécialisation : Information Systems Strategy & Governance, Software Engineering, IT
-                        for Finance, et Technologies immersives & IA. Une formation au croisement de la stratégie, du
-                        développement logiciel et des technologies émergentes, pour accompagner la transformation
-                        digitale des entreprises et relever les défis de secteurs en constante évolution.
-                    </li>
-                </ul>
-            </li>
-            <li class="filiere_item">Filière Sécurité & réseaux :
-                <ul>
-                    <li>La filière Sécurité & Réseaux forme des ingénieurs capables de concevoir, administrer et
-                        sécuriser les infrastructures numériques qui soutiennent l’économie et la société. Elle propose
-                        trois majeures de spécialisation : Cybersécurité, SI & Gouvernance, Cybersécurité
-                        infrastructures & logiciels, et Cybersécurité & Cloud. Une formation d’excellence pour répondre
-                        aux défis croissants de la cybersécurité et des systèmes connectés.
-                    </li>
-                </ul>
-            </li>
-            <li class="filiere_item">Filière Data Science :
-                <ul>
-                    <li>La filière Data Science forme des ingénieurs capables d’analyser, structurer et valoriser les
-                        données pour répondre aux grands enjeux sociétaux et économiques. Une formation au croisement
-                        des mathématiques, de l’informatique et de la stratégie, pour faire de la donnée un moteur de
-                        transformation.
-                    </li>
-                </ul>
-            </li>
-            <li class="filiere_item">Filière Systèmes embarqués
-                <ul>
-                    <li>Au croisement de l’électronique, de l’IA et de l’autonomie des systèmes, la filière Systèmes
-                        embarqués forme des ingénieurs capables de concevoir et d’intégrer des technologies au sein
-                        d’environnements complexes. Elle propose deux majeures de spécialisation : Transports
-                        intelligents, pour développer les mobilités de demain, et Systèmes robotiques et drones, pour
-                        concevoir des solutions autonomes au service de l’industrie, de la recherche et de la société.
-                    </li>
-                </ul>
-            </li>
+    <main>
 
-        </ol>
-    </section>
-    <section>
-        <table>
-            <caption>
-                Cours
-            </caption>
-            <thead>
-                <tr>
-                    <th scope="col"> Année </th>
-                    <th scope="col">Langage de Programmation</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1ère année de prépa</td>
-                    <td>Algorithmique </td>
-                </tr>
-                <tr>
-                    <td>1ère année de prépa</td>
-                    <td>Programmation en Python </td>
-                </tr>
-                <tr>
-                    <td>1ère année de prépa</td>
-                    <td>Structures de Données et Programmation 1</td>
-                </tr>
-                <tr>
-                    <td>1ère année de prépa</td>
-                    <td>Complexité </td>
-                </tr>
-                <tr>
-                    <td> 2ère année de prépa </td>
-                    <td>Structures de Données et Programmation 2</td>
-                </tr>
-                <tr>
-                    <td>2ère année de prépa</td>
-                    <td>Introduction au système Linux</td>
-                </tr>
-                <tr>
-                    <td>2ère année de prépa</td>
-                    <td>Réseaux 1 : Concepts de base</td>
-                </tr>
-                <tr>
-                    <td>2ère année de prépa </td>
-                    <td>Bases de données 1 : Concepts de base</td>
-                </tr>
-                <tr>
-                    <td>2ère année de prépa</td>
-                    <td>Java 1 : Fondamentaux de la POO</td>
-                </tr>
-                <tr>
-                    <td>2ère année de prépa</td>
-                    <td>Programmation Web 1 : HTML, CSS, JS</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+        <section class="hero compact">
+            <div class="hero-text">
+                <p class="eyebrow">Formations</p>
+                <h1>Des parcours lisibles, techniques et professionnalisants.</h1>
+                <p>Du bachelor au cycle ingénieur, les formations développent l'expertise technique, la gestion de
+                    projet et l'innovation.</p>
+            </div>
+            <div class="hero-img"><img src="../img/efrei_1.jpg" alt="Logo et campus Efrei"></div>
+        </section>
+        <section class="section">
+            <h2>Choisir un niveau</h2>
+            <div class="filters"><button class="filter active" data-filter="all">Tous</button><button class="filter"
+                    data-filter="bachelor">Bachelors</button><button class="filter" data-filter="ingenieur">Cycle
+                    ingénieur</button></div>
+            <div class="grid two programs">
+                <article class="card program reveal" data-type="bachelor"><span class="tag">Bachelor</span>
+                    <h3>Informatique – grade de licence</h3>
+                    <ul class="triangle-list">
+                        <li>Développement web et mobile</li>
+                        <li>Bases de données</li>
+                        <li>Premiers projets logiciels</li>
+                    </ul>
+                </article>
+                <article class="card program reveal" data-type="bachelor"><span class="tag">Bachelor</span>
+                    <h3>Cybersécurité & Réseaux</h3>
+                    <ul class="triangle-list">
+                        <li>Administration systèmes</li>
+                        <li>Sécurité des infrastructures</li>
+                        <li>Culture CTF et défense</li>
+                    </ul>
+                </article>
+                <article class="card program reveal" data-type="ingenieur"><span class="tag">Ingénieur</span>
+                    <h3>Information Technology</h3>
+                    <p>Stratégie SI, software engineering, IT for finance, technologies immersives et IA.</p>
+                </article>
+                <article class="card program reveal" data-type="ingenieur"><span class="tag">Ingénieur</span>
+                    <h3>Data Science</h3>
+                    <p>Mathématiques, informatique et stratégie pour transformer la donnée en décisions.</p>
+                </article>
+                <article class="card program reveal" data-type="ingenieur"><span class="tag">Ingénieur</span>
+                    <h3>Sécurité & Réseaux</h3>
+                    <p>Concevoir, administrer et sécuriser les infrastructures numériques.</p>
+                </article>
+                <article class="card program reveal" data-type="ingenieur"><span class="tag">Ingénieur</span>
+                    <h3>Systèmes embarqués</h3>
+                    <p>Transports intelligents, robotique, drones et IA embarquée.</p>
+                </article>
+            </div>
+        </section>
 
-    <footer>
-            <div>
-                <strong>EFREI Paris</strong>
-                <p>Module Informatique — Département Sciences & Technologies du Numérique</p>
-                <p>30 Av. de la République, 94800 Villejuif</p>
+        <section class="section visual-programs">
+            <h2>Apprendre avec des situations concrètes</h2>
+            <div class="image-cards">
+                <article class="image-card reveal"><img
+                        src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80"
+                        alt="Équipe projet en salle de travail" loading="lazy">
+                    <div><span class="tag">Projet</span>
+                        <h3>Travail en équipe</h3>
+                        <p>Les étudiants apprennent à organiser, coder, tester et présenter une solution.</p>
+                    </div>
+                </article>
+                <article class="image-card reveal"><img
+                        src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
+                        alt="Écran avec données et interface technologique" loading="lazy">
+                    <div><span class="tag">Cyber & data</span>
+                        <h3>Spécialisation progressive</h3>
+                        <p>Réseaux, sécurité, données et IA sont abordés par la pratique.</p>
+                    </div>
+                </article>
             </div>
-            <div>
-                <p>© 2025 EFREI Paris – Zhang & Hadoum</p>
-            </div>
+        </section>
+        <section class="section soft">
+            <h2>Cours enseignés</h2>
+            <table class="course-table">
+                <caption>Exemples de cours du département</caption>
+                <thead>
+                    <tr>
+                        <th>Année</th>
+                        <th>Matière</th>
+                        <th>Objectif</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Prépa 1</td>
+                        <td>Algorithmique</td>
+                        <td>Raisonner et structurer un problème</td>
+                    </tr>
+                    <tr>
+                        <td>Prépa 1</td>
+                        <td>Python</td>
+                        <td>Programmer rapidement des solutions</td>
+                    </tr>
+                    <tr>
+                        <td>Prépa 2</td>
+                        <td>Java / POO</td>
+                        <td>Modéliser avec des objets</td>
+                    </tr>
+                    <tr>
+                        <td>Prépa 2</td>
+                        <td>HTML, CSS, JS</td>
+                        <td>Créer un site web interactif</td>
+                    </tr>
+                    <tr>
+                        <td>Cycle ingénieur</td>
+                        <td>IA & Machine Learning</td>
+                        <td>Exploiter les données</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div>
+            <strong>EFREI Paris</strong>
+            <p>Département Informatique — Sciences & Technologies du Numérique</p>
+            <p>30 avenue de la République, 94800 Villejuif</p>
+        </div>
+        <div class="footer-tags">
+            <span>CGE</span><span>CTI</span><span>EESPIG</span>
+        </div>
+        <p class="credits">© 2025 EFREI Paris – Projet web Zhang & Hadoum</p>
     </footer>
-
+    <script src="../js/formations.js"></script>
 </body>
+
+</html>

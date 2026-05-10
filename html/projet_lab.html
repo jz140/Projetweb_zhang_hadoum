@@ -1,43 +1,111 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="fr">
 
-<html lang="fr"> 
-<head> 
-    <link href="../css/projet_lab.css" rel="stylesheet" />
-
-
-    <title> Site efrei projet - Projet et Laboratoire</title>
-
-    <meta charset="UTF-8"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets et Labs - Département Informatique Efrei</title>
+    <link rel="stylesheet" href="../css/projet_lab.css">
 </head>
 
 <body>
-
-    <header>
-    <a href ="https://www.efrei.fr/"> <img src = "../img/efrei_campus.jpg" alt = "Efrei_site" width="400" height="300"> </a> 
-    <nav>
-            <a href="../html/accueil.html"> Accueil </a>
-            <a href="../html/cours_formation.html"> Cours et Formations </a>
-            <a href="../html/equipe_enseignante.html">Equipe Enseignante</a>
-            <a href="../html/projet_lab.html">Projet et Laboratoire</a>
-            <a href="../html/contact.html">Nous Contacter</a>
-            <a href="../html/a_propos.html">information</a>
+    <header class="site-header">
+        <a class="brand" href="accueil.html" aria-label="Retour à l'accueil">
+            <span class="brand-mark">EF</span>
+            <span><strong>Efrei</strong><small>Département Informatique</small></span>
+        </a>
+        <button class="menu-button" id="menuButton" type="button">Menu</button>
+        <nav class="main-nav" id="mainNav">
+            <a href="accueil.html">Accueil</a>
+            <a href="cours_formation.html">Formations</a>
+            <a href="equipe_enseignante.html">Enseignants</a>
+            <a href="projet_lab.html">Projets & Labs</a>
+            <a href="contact.html">Contact</a>
+            <a href="a_propos.html">À propos</a>
         </nav>
     </header>
-    <section>
-    <h1>Projet et Laboratoire</h1>
-    <p>Découvrez les projets de recherche et les laboratoires associés au département informatique de l'EFREI Paris, où l'innovation et la collaboration sont au cœur de notre mission.</p>
+    <main>
 
-    </section>
+        <section class="hero compact">
+            <div class="hero-text">
+                <p class="eyebrow">Vie étudiante & campus</p>
+                <h1>Apprendre en construisant des projets visibles.</h1>
+                <p>Labs informatiques, espaces collaboratifs, associations et projets étudiants donnent vie aux
+                    compétences du département.</p>
+            </div>
+            <div class="hero-img"><img src="../img/efrei_2.webp" alt="Étudiants et campus Efrei"></div>
+        </section>
+        <section class="section">
+            <h2>Installations et moyens</h2>
+            <div class="grid">
+                <article class="card reveal">
+                    <h3>Labs informatiques</h3>
+                    <p>Espaces de travail pour coder, tester, prototyper et présenter.</p>
+                </article>
+                <article class="card reveal">
+                    <h3>Coworking</h3>
+                    <p>Travail en équipe, revues de projet et entraide entre promotions.</p>
+                </article>
+                <article class="card reveal">
+                    <h3>Plateformes pédagogiques</h3>
+                    <p>Ressources numériques et suivi des compétences techniques.</p>
+                </article>
+            </div>
+        </section>
+        <section class="section soft">
+            <h2>Clubs et projets</h2>
+            <div class="accordion"><button class="accordion-title">Club programmation</button>
+                <div class="accordion-content">
+                    <p>Challenges d'algorithmique, développement web et projets open source.</p>
+                </div><button class="accordion-title">Robotique et embarqué</button>
+                <div class="accordion-content">
+                    <p>Prototypes, drones, objets connectés et systèmes autonomes.</p>
+                </div><button class="accordion-title">Cybersécurité / CTF</button>
+                <div class="accordion-content">
+                    <p>Entraînement à l'analyse de failles et à la défense d'infrastructures.</p>
+                </div>
+            </div>
+        </section>
 
-        <footer>
-            <div>
-                <strong>EFREI Paris</strong>
-                <p>Module Informatique — Département Sciences & Technologies du Numérique</p>
-                <p>30 Av. de la République, 94800 Villejuif</p>
+        <section class="section project-gallery">
+            <h2>Ambiance projet</h2>
+            <div class="photo-grid">
+                <figure class="photo-card reveal"><img
+                        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80"
+                        alt="Étudiants en projet informatique" loading="lazy">
+                    <figcaption>Prototyper rapidement.</figcaption>
+                </figure>
+                <figure class="photo-card reveal"><img
+                        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"
+                        alt="Espace de coworking lumineux" loading="lazy">
+                    <figcaption>Présenter et améliorer.</figcaption>
+                </figure>
+                <figure class="photo-card reveal"><img
+                        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
+                        alt="Infrastructure informatique" loading="lazy">
+                    <figcaption>Tester des infrastructures.</figcaption>
+                </figure>
             </div>
-            <div>
-                <p>© 2025 EFREI Paris – Zhang & Hadoum</p>
-            </div>
+        </section>
+        <section class="section">
+            <h2>Témoignage</h2>
+            <blockquote id="quoteBox" class="card quote">“Les projets nous obligent à apprendre comme dans une vraie
+                équipe tech.”</blockquote><button id="quoteBtn" class="btn yellow" type="button">Changer de
+                témoignage</button>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div>
+            <strong>EFREI Paris</strong>
+            <p>Département Informatique — Sciences & Technologies du Numérique</p>
+            <p>30 avenue de la République, 94800 Villejuif</p>
+        </div>
+        <div class="footer-tags">
+            <span>CGE</span><span>CTI</span><span>EESPIG</span>
+        </div>
+        <p class="credits">© 2025 EFREI Paris – Projet web Zhang & Hadoum</p>
     </footer>
+    <script src="../js/projet_lab.js"></script>
 </body>
 
+</html>

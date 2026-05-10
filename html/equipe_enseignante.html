@@ -1,46 +1,144 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="fr">
 
-<html lang="fr"> 
-<head> 
-    <link href="../css/equipe.css" rel="stylesheet" />
-
-
-    <title> Site efrei projet - Equipe Enseignante</title>
-
-    <meta charset="UTF-8"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enseignants - Département Informatique Efrei</title>
+    <link rel="stylesheet" href="../css/equipe.css">
 </head>
 
 <body>
-
-    <header>
-    <a href ="https://www.efrei.fr/"> <img src = "../img/efrei_2.webp" alt = "Efrei_site" width="400" height="300"> </a> 
-    <nav>
-            <a href="../html/accueil.html"> Accueil </a>
-            <a href="../html/cours_formation.html"> Cours et Formations </a>
-            <a href="../html/equipe_enseignante.html">Equipe Enseignante</a>
-            <a href="../html/projet_lab.html">Projet et Laboratoire</a>
-            <a href="../html/contact.html">Nous Contacter</a>
-            <a href="../html/a_propos.html">information</a>
+    <header class="site-header">
+        <a class="brand" href="accueil.html" aria-label="Retour à l'accueil">
+            <span class="brand-mark">EF</span>
+            <span><strong>Efrei</strong><small>Département Informatique</small></span>
+        </a>
+        <button class="menu-button" id="menuButton" type="button">Menu</button>
+        <nav class="main-nav" id="mainNav">
+            <a href="accueil.html">Accueil</a>
+            <a href="cours_formation.html">Formations</a>
+            <a href="equipe_enseignante.html">Enseignants</a>
+            <a href="projet_lab.html">Projets & Labs</a>
+            <a href="contact.html">Contact</a>
+            <a href="a_propos.html">À propos</a>
         </nav>
     </header>
+    <main>
 
-    <p> Jean soma</p>
-    <p>Gebril Hadoum</p>
-    <p>Yvan Monkaka</p>
-    <p>Ernold Lebon</p>
-    <p>Jackie Zheng</p>
-    <p>Jackie Zhang</p>
-    <p>Jacky Zheng</p>
-    <p> Jacky Zhang</p>
+        <section class="hero compact">
+            <div class="hero-text">
+                <p class="eyebrow">Corps enseignant & recherche</p>
+                <h1>Une équipe tournée vers la pratique, l'innovation et la recherche.</h1>
+                <p>Les enseignants accompagnent les étudiants dans les fondamentaux, les projets et les spécialisations.
+                </p>
+            </div>
+            <div class="hero-img"><img src="../img/efrei_campus.jpg" alt="Campus Efrei Villejuif"></div>
+        </section>
+        <section class="section">
+            <h2>Domaines d'expertise</h2>
+            <div class="grid">
+                <article class="card teacher reveal">
+                    <div class="avatar">IA</div>
+                    <h3>Intelligence Artificielle</h3>
+                    <p>Machine learning, traitement de données et applications responsables.</p>
+                </article>
+                <article class="card teacher reveal">
+                    <div class="avatar">CY</div>
+                    <h3>Cyberdéfense</h3>
+                    <p>Sécurité réseau, gouvernance, cloud et protection des systèmes.</p>
+                </article>
+                <article class="card teacher reveal">
+                    <div class="avatar">CL</div>
+                    <h3>Cloud Computing</h3>
+                    <p>Architectures distribuées, DevOps et services numériques.</p>
+                </article>
+            </div>
+        </section>
 
-    <footer>
-            <div>
-                <strong>EFREI Paris</strong>
-                <p>Module Informatique — Département Sciences & Technologies du Numérique</p>
-                <p>30 Av. de la République, 94800 Villejuif</p>
+
+        <section class="section teacher-photos">
+            <h2>Une pédagogie proche des métiers du numérique</h2>
+            <div class="photo-grid two-photo">
+                <figure class="photo-card reveal"><img
+                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                        alt="Groupe d'étudiants autour d'un ordinateur" loading="lazy">
+                    <figcaption>Accompagnement en petits groupes et revues de projet.</figcaption>
+                </figure>
+                <figure class="photo-card reveal"><img
+                        src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80"
+                        alt="Espace de travail moderne avec ordinateur portable" loading="lazy">
+                    <figcaption>Une approche professionnelle, claire et tournée vers la pratique.</figcaption>
+                </figure>
             </div>
-            <div>
-                <p>© 2025 EFREI Paris – Zhang & Hadoum</p>
+        </section>
+        <section class="section soft">
+            <h2>Équipe pédagogique</h2>
+            <p class="section-intro">Une équipe variée d’enseignants, intervenants professionnels et chercheurs
+                accompagne les étudiants dans les projets, les cours et les spécialisations.</p>
+            <div class="teacher-slider" aria-label="Liste défilante des enseignants">
+                <div class="teacher-track">
+                    <article class="teacher-chip"><span>AM</span><strong>Amélie Martin</strong><small>Développement
+                            Web</small></article>
+                    <article class="teacher-chip"><span>KR</span><strong>Karim
+                            Renault</strong><small>Cybersécurité</small></article>
+                    <article class="teacher-chip"><span>LC</span><strong>Lina Chevalier</strong><small>Intelligence
+                            Artificielle</small></article>
+                    <article class="teacher-chip"><span>HD</span><strong>Hugo Delmas</strong><small>Systèmes &
+                            Réseaux</small></article>
+                    <article class="teacher-chip"><span>SN</span><strong>Sofia Nguyen</strong><small>Base de
+                            données</small></article>
+                    <article class="teacher-chip"><span>TB</span><strong>Thomas Benali</strong><small>Cloud &
+                            DevOps</small></article>
+                    <article class="teacher-chip"><span>MR</span><strong>Marie
+                            Rousseau</strong><small>Algorithmique</small></article>
+                    <article class="teacher-chip"><span>NP</span><strong>Nathan Petit</strong><small>Programmation
+                            C</small></article>
+                    <article class="teacher-chip"><span>AM</span><strong>Amélie Martin</strong><small>Développement
+                            Web</small></article>
+                    <article class="teacher-chip"><span>KR</span><strong>Karim
+                            Renault</strong><small>Cybersécurité</small></article>
+                    <article class="teacher-chip"><span>LC</span><strong>Lina Chevalier</strong><small>Intelligence
+                            Artificielle</small></article>
+                    <article class="teacher-chip"><span>HD</span><strong>Hugo Delmas</strong><small>Systèmes &
+                            Réseaux</small></article>
+                    <article class="teacher-chip"><span>SN</span><strong>Sofia Nguyen</strong><small>Base de
+                            données</small></article>
+                    <article class="teacher-chip"><span>TB</span><strong>Thomas Benali</strong><small>Cloud &
+                            DevOps</small></article>
+                    <article class="teacher-chip"><span>MR</span><strong>Marie
+                            Rousseau</strong><small>Algorithmique</small></article>
+                    <article class="teacher-chip"><span>NP</span><strong>Nathan Petit</strong><small>Programmation
+                            C</small></article>
+                </div>
             </div>
+        </section>
+        <section class="section soft">
+            <h2>Projets de recherche</h2>
+            <div class="timeline">
+                <article class="card reveal"><span class="tag">Big Data</span>
+                    <h3>Analyse de données massives</h3>
+                    <p>Étude, visualisation et valorisation des données pour l'entreprise.</p>
+                </article>
+                <article class="card reveal"><span class="tag">Cyber</span>
+                    <h3>Plateformes de défense</h3>
+                    <p>Scénarios pédagogiques pour apprendre à détecter et corriger des failles.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div>
+            <strong>EFREI Paris</strong>
+            <p>Département Informatique — Sciences & Technologies du Numérique</p>
+            <p>30 avenue de la République, 94800 Villejuif</p>
+        </div>
+        <div class="footer-tags">
+            <span>CGE</span><span>CTI</span><span>EESPIG</span>
+        </div>
+        <p class="credits">© 2025 EFREI Paris – Projet web Zhang & Hadoum</p>
     </footer>
+    <script src="../js/equipe.js"></script>
 </body>
+
+</html>

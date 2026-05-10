@@ -1,119 +1,89 @@
 <!DOCTYPE html>
-
-
-
 <html lang="fr">
 
 <head>
-
-    <link href="../css/contact.css" rel="stylesheet" />
-
-
-
-
-
-    <title> Site efrei projet - Nous Contacter</title>
-
-
-
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact et admissions - Département Informatique Efrei</title>
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 
-
-
 <body>
-
-
-
-    <header>
-
-    <a href ="https://www.efrei.fr/"> <img src = "../img/efrei_campus.jpg" alt = "Efrei_site" width="700" height="300"> </a>
-
-    <nav>
-
-            <a href="../html/accueil.html"> Accueil </a>
-
-            <a href="../html/cours_formation.html"> Cours et Formations </a>
-
-            <a href="../html/equipe_enseignante.html">Equipe Enseignante</a>
-
-            <a href="../html/projet_lab.html">Projet et Laboratoire</a>
-
-            <a href="../html/contact.html">Nous Contacter</a>
-
-            <a href="../html/a_propos.html">information</a>
-
+    <header class="site-header">
+        <a class="brand" href="accueil.html" aria-label="Retour à l'accueil">
+            <span class="brand-mark">EF</span>
+            <span><strong>Efrei</strong><small>Département Informatique</small></span>
+        </a>
+        <button class="menu-button" id="menuButton" type="button">Menu</button>
+        <nav class="main-nav" id="mainNav">
+            <a href="accueil.html">Accueil</a>
+            <a href="cours_formation.html">Formations</a>
+            <a href="equipe_enseignante.html">Enseignants</a>
+            <a href="projet_lab.html">Projets & Labs</a>
+            <a href="contact.html">Contact</a>
+            <a href="a_propos.html">À propos</a>
         </nav>
-
     </header>
+    <main>
 
-    <br>
-
-
-
-    <form>
-
-    <fieldset>
-
-        <legend>Informations Personnelles</legend>
-
-
-
-       
-
-        <label for="Nom">Nom :</label><br>
-
-        <input type="text" id="Nom"><br><br>
-
-       
-
-        <label for="prenom">Prenom :</label><br>
-
-        <input type="text" id="prenom"><br><br>
-
-       
-
-        <label for="email"> Adresse mail :</label><br>
-
-        <input type="email" id="email"><br><br>
-
-       
-
-        <label for="text_input"> Votre message :</label> <br>
-
-        <input type="text" id="message"><br><br>
-
-    </fieldset> <br>
-
-
-
-    <button type="button">Envoyer</button>
-
-
-
-</form>
-
-
-
-    <footer>
-
-            <div> <br>
-
-                <strong>EFREI Paris</strong>
-
-                <p>Module Informatique — Département Sciences & Technologies du Numérique</p>
-
-                <p>30 Av. de la République, 94800 Villejuif</p>
-
+        <section class="hero compact">
+            <div class="hero-text">
+                <p class="eyebrow">Contact & admissions</p>
+                <h1>Une question sur les formations ou le campus ?</h1>
+                <p>Écrivez au département informatique ou préparez votre admission post-bac et parallèle.</p>
             </div>
+            <div class="hero-img"><img src="../img/efrei_campus.jpg" alt="Campus Efrei Villejuif"></div>
+        </section>
+        <section class="section contact-layout">
+            <form id="contactForm" class="card" novalidate>
+                <h2>Envoyer un message</h2><label for="nom">Nom</label><input type="text" id="nom" name="nom"><label
+                    for="prenom">Prénom</label><input type="text" id="prenom" name="prenom"><label for="email">Adresse
+                    mail</label><input type="email" id="email" name="email"><label for="sujet">Sujet</label><select
+                    id="sujet" name="sujet">
+                    <option value="">Choisir un sujet</option>
+                    <option>Formation</option>
+                    <option>Admissions</option>
+                    <option>Alternance</option>
+                    <option>Campus</option>
+                </select><label for="message">Votre message</label><textarea id="message" name="message"
+                    rows="5"></textarea><button class="btn yellow" type="submit">Envoyer</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+            <aside class="card info">
+                <h2>Informations pratiques</h2>
+                <ul class="triangle-list">
+                    <li>Campus de Villejuif : 30 avenue de la République</li>
+                    <li>Accès : métro ligne 7 et future ligne 15</li>
+                    <li>Admissions : Parcoursup, Puissance Alpha, admissions parallèles</li>
+                    <li>Email : informatique@efrei.fr</li>
+                </ul>
+            </aside>
+        </section>
 
-            <div>
-
-                <p>© 2025 EFREI Paris – Zhang & Hadoum</p>
-
+        <section class="section contact-visual">
+            <h2>Venir nous rencontrer</h2>
+            <div class="image-card reveal"><img
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                    alt="Étudiants discutant d'un projet avec un ordinateur" loading="lazy">
+                <div><span class="tag">Admissions</span>
+                    <h3>Échanger avec l'équipe</h3>
+                    <p>Une rencontre permet de comprendre les parcours, l'alternance et la vie sur le campus.</p>
+                </div>
             </div>
-
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div>
+            <strong>EFREI Paris</strong>
+            <p>Département Informatique — Sciences & Technologies du Numérique</p>
+            <p>30 avenue de la République, 94800 Villejuif</p>
+        </div>
+        <div class="footer-tags">
+            <span>CGE</span><span>CTI</span><span>EESPIG</span>
+        </div>
+        <p class="credits">© 2025 EFREI Paris – Projet web Zhang & Hadoum</p>
     </footer>
     <script src="../js/contact.js"></script>
 </body>
+
+</html>

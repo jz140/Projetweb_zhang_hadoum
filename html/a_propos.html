@@ -1,37 +1,77 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="fr">
 
-<html lang="fr"> 
-<head> 
-    <link href="../css/a_propos.css" rel="stylesheet" />
-
-
-    <title> Site efrei projet - information</title>
-
-    <meta charset="UTF-8"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Projet web</title>
+    <link rel="stylesheet" href="../css/a_propos.css">
 </head>
 
 <body>
-
-    <header>
-    <a href ="https://www.efrei.fr/"> <img src = "../img/efrei_campus.jpg" alt = "Efrei_site" width="400" height="300"> </a> 
-    <nav>
-            <a href="../html/accueil.html"> Accueil </a>
-            <a href="../html/cours_formation.html"> Cours et Formations </a>
-            <a href="../html/equipe_enseignante.html">Equipe Enseignante</a>
-            <a href="../html/projet_lab.html">Projet et Laboratoire</a>
-            <a href="../html/contact.html">Nous Contacter</a>
-            <a href="../html/a_propos.html">information</a>
+    <header class="site-header">
+        <a class="brand" href="accueil.html" aria-label="Retour à l'accueil">
+            <span class="brand-mark">EF</span>
+            <span><strong>Efrei</strong><small>Département Informatique</small></span>
+        </a>
+        <button class="menu-button" id="menuButton" type="button">Menu</button>
+        <nav class="main-nav" id="mainNav">
+            <a href="accueil.html">Accueil</a>
+            <a href="cours_formation.html">Formations</a>
+            <a href="equipe_enseignante.html">Enseignants</a>
+            <a href="projet_lab.html">Projets & Labs</a>
+            <a href="contact.html">Contact</a>
+            <a href="a_propos.html">À propos</a>
         </nav>
     </header>
+    <main>
 
-    <footer>
-            <div>
-                <strong>EFREI Paris</strong>
-                <p>Module Informatique — Département Sciences & Technologies du Numérique</p>
-                <p>30 Av. de la République, 94800 Villejuif</p>
+        <section class="hero compact">
+            <div class="hero-text">
+                <p class="eyebrow">À propos du site</p>
+                <h1>Un site vitrine réalisé avec HTML, CSS et JavaScript.</h1>
+                <p>Ce projet respecte une structure claire : une page HTML, une feuille CSS et un fichier JavaScript
+                    pour chaque page.</p>
             </div>
-            <div>
-                <p>© 2025 EFREI Paris – Zhang & Hadoum</p>
+            <div class="hero-img"><img src="../img/efrei_1.jpg" alt="Identité visuelle Efrei"></div>
+        </section>
+        <section class="section">
+            <h2>Choix de conception</h2>
+            <div class="grid two">
+                <article class="card reveal">
+                    <h3>Charte graphique</h3>
+                    <p>Bleu académique, blanc, cyan technologique et jaune électrique pour garder une identité moderne
+                        et cohérente.</p>
+                </article>
+                <article class="card reveal">
+                    <h3>Limites du cours</h3>
+                    <p>Le site utilise uniquement des balises HTML classiques, du CSS externe et du JavaScript simple
+                        basé sur les événements et le DOM.</p>
+                </article>
             </div>
+        </section>
+        <section class="section soft">
+            <h2>Organisation</h2>
+            <ul class="triangle-list card">
+                <li>Dossier html : toutes les pages du site</li>
+                <li>Dossier css : un fichier de style par page</li>
+                <li>Dossier js : un script par page</li>
+                <li>Dossier img : les visuels utilisés</li>
+            </ul>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div>
+            <strong>EFREI Paris</strong>
+            <p>Département Informatique — Sciences & Technologies du Numérique</p>
+            <p>30 avenue de la République, 94800 Villejuif</p>
+        </div>
+        <div class="footer-tags">
+            <span>CGE</span><span>CTI</span><span>EESPIG</span>
+        </div>
+        <p class="credits">© 2025 EFREI Paris – Projet web Zhang & Hadoum</p>
     </footer>
+    <script src="../js/a_propos.js"></script>
 </body>
+
+</html>

@@ -1,44 +1,43 @@
-/* Fonction pour envoyer le formulaire */
-function envoyerFormulaire() {
-    /* Récupération des valeurs */
-    var nom = document.getElementById("Nom").value;
-    var prenom = document.getElementById("prenom").value;
-    var email = document.getElementById("email").value;
-
-    /* Vérification si les champs sont vides */
-    if (nom == "" || prenom == "" || email == "") {
-        alert("Merci de remplir tous les champs avant d'envoyer.");
-    } else {
-        /* Message de succès */
-        alert("Merci " + prenom + " ! Votre message a bien été envoyé.");
-    }
+function initMenu() { 
+    var btn = document.getElementById('menuButton'); 
+    var nav = document.getElementById('mainNav'); 
+    if (btn && nav) { btn.onclick = function () { 
+        nav.classList.toggle('open'); }; 
+    } 
+        var links = document.querySelectorAll('.main-nav a'); 
+        for (var i = 0; i < links.length; i++) { 
+            if (location.pathname.indexOf(links[i].getAttribute('href')) !== -1) { 
+                links[i].classList.add('active'); 
+            } 
+        } 
 }
-
-/* On lie la fonction au clic sur le bouton */
-document.querySelector("button").onclick = envoyerFormulaire;
-/* Fonction d'envoi */
-function envoyerFormulaire() {
-    /* Récupération des éléments */
-    var nom = document.getElementById("Nom").value;
-    var prenom = document.getElementById("prenom").value;
-    var email = document.getElementById("email").value;
-    var formulaire = document.querySelector("form");
-
-    /* Vérification */
-    if (nom == "" || prenom == "" || email == "") {
-        alert("Attention : tous les champs sont obligatoires !");
-    } else {
-        /* 1. Pop-up de confirmation du navigateur */
-        alert("Envoi en cours...");
-
-        /* 2. On cache le formulaire et on affiche un message dans la page */
-        formulaire.innerHTML = "<h3>Merci " + prenom + " !</h3><p>Votre message a été envoyé avec succès au département EFREI.</p>";
-        
-        /* 3. Petit style rapide pour le message de succès */
-        formulaire.style.textAlign = "center";
-        formulaire.style.color = "#00A651";
-    }
+function revealCards() { 
+    var cards = document.querySelectorAll('.reveal'); 
+    for (var i = 0; i < cards.length; i++) { 
+        cards[i].classList.add('visible'); 
+    } 
 }
+document.addEventListener('DOMContentLoaded', function () { initMenu(); setTimeout(revealCards, 150); });
 
-/* Liaison au bouton */
-document.querySelector("button").onclick = envoyerFormulaire;
+document.addEventListener('DOMContentLoaded', function () { 
+    var form = document.getElementById('contactForm'); 
+    var msg = document.getElementById('formMessage'); 
+    form.onsubmit = function (event) {
+         event.preventDefault(); 
+         var nom = document.getElementById('nom').value; 
+         var prenom = document.getElementById('prenom').value;
+          var email = document.getElementById('email').value; 
+          var sujet = document.getElementById('sujet').value;
+           var message = document.getElementById('message').value; 
+           if (nom === '' || prenom === '' || email === '' || sujet === '' || message === '') {
+             msg.textContent = 'Merci de remplir tous les champs avant l’envoi.'; 
+             msg.className = 'form-message error'; 
+            } 
+            else if (email.indexOf('@') === -1) { 
+                msg.textContent = 'Merci de saisir une adresse mail valide.'; msg.className = 'form-message error'; 
+            } 
+            else { 
+                msg.textContent = 'Merci ' + prenom + ' ! Votre message a bien été préparé pour le département informatique.'; msg.className = 'form-message success'; form.reset();
+            } 
+        }; 
+});
